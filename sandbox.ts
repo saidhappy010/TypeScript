@@ -27,7 +27,7 @@ let obj2: {
 };
 
 obj2 = {
-  mane: 'tutu',
+  name: 'tutu',
   age: 20
 };
 

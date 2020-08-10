@@ -18,6 +18,6 @@ var obj;
 obj = { name: 'zak', age: 10 };
 var obj2;
 obj2 = {
-    mane: 'tutu',
+    name: 'tutu',
     age: 20
 };
