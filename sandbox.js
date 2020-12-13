@@ -1,23 +1,12 @@
-//Explicit Types
-var character;
-var age;
-var isLoggedIn;
-//Array
-var arr = [];
-arr.push("hello");
-//union types
+var age = 25;
+console.log(age);
+age = true;
+console.log(age);
 var mixed = [];
-mixed.push("world");
-mixed.push(10);
+mixed.push(5);
+mixed.push('hello');
+mixed.push(true);
 console.log(mixed);
-var uid;
-uid = '10';
-uid = 10;
-//Objects
 var obj;
-obj = { name: 'zak', age: 10 };
-var obj2;
-obj2 = {
-    name: 'tutu',
-    age: 20
-};
+obj = { mane: 23, age: 'Jack' };
+console.log(obj);
