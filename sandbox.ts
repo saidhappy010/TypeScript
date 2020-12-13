@@ -1,33 +1,17 @@
-//Explicit Types
-let character: string;
-let age: number;
-let isLoggedIn: boolean;
+let age: any = 25;
+console.log(age);
+age = true;
+console.log(age);
 
-//Array
-let arr: string[] = [];
-arr.push("hello");
-
-//union types
-let mixed: (string|number)[] = [];
-mixed.push("world");
-mixed.push(10);
+let mixed: any[] = [];
+mixed.push(5);
+mixed.push('hello');
+mixed.push(true);
 console.log(mixed);
 
-let uid: string|number;
-uid = '10';
-uid = 10;
+let obj: {mane: any, age:any};
+obj = {mane:23, age:'Jack'};
+console.log(obj);
 
-//Objects
-let obj: object;
-obj = {name:'zak', age:10};
 
-let obj2: {
-  name: string,
-  age: number
-};
-
-obj2 = {
-  name: 'tutu',
-  age: 20
-};
 
