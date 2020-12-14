@@ -1,13 +1,25 @@
-type StrOrNum = string | number
-type  userObj = {name: string, uid: StrOrNum}
-
-const firstFunction = (uid: StrOrNum, item: string) {
-  console.log(`${item} has a uid of ${uid}`);
+//example1
+let greet: (a: string, b: string) => void
+greet = (name: string, greeting: string) => {
+  console.log(name + ' says ' + greeting);
 }
-firstFunction(1, 'hello')
+greet('zak', 'hell')
 
-const secondFunction = (user: userObj) => {
-  console.log(`${user.name} says hello`);
+//example2
+let calc: (a: number, b: number, c: string) => number
+calc = (num1: number, num2: number, action: string) => {
+  if(action === 'add')
+    return num1 + num2
+  else 
+    return num1 - num2
 }
+console.log(calc(2, 1, 'ad'));
 
-secondFunction({name: 'hi', uid:10})
+//example3
+let presonDetails: (obj: {name: string, age: number}) => void
+type person = {name: string, age: number}
+presonDetails = (person: person) => {
+  console.log(person.name + ' is ' + person.age + ' old years');
+}
+presonDetails({name:'zak', age: 16})
+
