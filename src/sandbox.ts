@@ -1,20 +1,13 @@
-let firstFunction: Function;
+type StrOrNum = string | number
+type  userObj = {name: string, uid: StrOrNum}
 
-firstFunction = () => {
-  console.log('hello typescript');
+const firstFunction = (uid: StrOrNum, item: string) {
+  console.log(`${item} has a uid of ${uid}`);
 }
-// ? c-a-d cet arg est optionnel
-const add = (a: number, b: number, c: number | string = 10, d?: number | string): void => {
-  console.log(a + b);
-  console.log(c);
-  console.log(d);
+firstFunction(1, 'hello')
+
+const secondFunction = (user: userObj) => {
+  console.log(`${user.name} says hello`);
 }
-add(5,20)
 
-const minus = (a:number, b:number): number => {
-  return a - b
-}
-let result = minus(20, 16)
-console.log(result);
-
-
+secondFunction({name: 'hi', uid:10})
